@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>Numberates</title>
+</head>
+<style>
+    body{
+        background-color: cadetblue;
+        font-family: roboto;
+        color: white;
+    }
+    h1{
+        color: rgb(255, 255, 255);
+        font-size: xx-large;
+    }
+    button{
+        color: white;
+        background-color: black;
+        margin-left: 110px;
+    }
+    .main{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .input{
+        margin-left: 20px;
+        color: black;
+    }
+    .attempt{
+        margin-left: 117px;
+        margin-top: -29px;
+    }
+</style>
+<body>
+    <div class=main>
+        <h1 align="center">Number Guessing Game</h1>
+        <hr>
+        <p>No. of attempts :</p>
+        <p id="attempts" class="attempt">10</p>
+        <h5>Guess the number between 1 to 100</h5>
+        <p>Enter the Number : <input type="number" id="num" class="input"></p><br><br>
+        <button onclick="check(document.getElementById('num').value)">Check</button>
+    </div>
+</body>
+</html>
